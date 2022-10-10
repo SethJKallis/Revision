@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -25,18 +26,9 @@ ol{
 }
 
 
-table{
+table, th, td{
     border: 1.5px solid #333;
+    border-collapse: collapse;
 }
 
-th{
-    border-bottom: 1.5px solid #333 ;
-}
 
-th{
-    text-decoration: underline;
-}
-
-img{
-
-}
