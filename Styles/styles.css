@@ -1,1 +1,42 @@
 /* Headings */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 2rem;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    padding-top: 2rem;
+}
+
+ul li{
+    list-style: square ;
+    list-style-position: inside;
+}
+
+ol{
+    list-style: lower-alpha;
+    list-style-position: inside;
+}
+
+
+table{
+    border: 1.5px solid #333;
+}
+
+th{
+    border-bottom: 1.5px solid #333 ;
+}
+
+th{
+    text-decoration: underline;
+}
+
+img{
+
+}
