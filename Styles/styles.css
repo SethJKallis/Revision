@@ -1,4 +1,4 @@
-/* Headings */
+/* Select all elements */
 *{
     margin: 0;
     padding: 0;
@@ -6,29 +6,90 @@
 }
 
 body{
-    margin: 0 2rem;
     font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
 }
 
-h2{
-    padding-top: 2rem;
+header, main, footer{
+    min-width: 100%;
 }
 
-ul li{
-    list-style: square ;
-    list-style-position: inside;
-}
-
-ol{
-    list-style: lower-alpha;
-    list-style-position: inside;
+header, footer{
+    background-color: darkgrey;
 }
 
 
-table, th, td{
-    border: 1.5px solid #333;
+
+ /* Display inline-flex */
+header, .menu-list{
+    display: inline-flex;
+}
+
+header img{
+    width: 5em;
+    border-radius: 2.5em;
+}
+
+.menu-list{
+    list-style-type: none;
+}
+
+.menu-list li{
+    padding: 0 5px;
+}
+
+.menu{
+    margin-left: auto;
+    align-self: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000;
+}
+
+a:hover, a:focus{
+    background-color: #333;
+    color: white;
+}
+
+a:active{
+    color: turquoise;
+}
+
+
+
+/* table */
+table{
+    border: 3px solid #000;
     border-collapse: collapse;
 }
 
+th, td{
+    border: 2px solid green;
+    text-align: center;
+}
 
+/* footer */
+footer p{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.html-typography{
+    border: 1px solid #000;
+    margin: 1rem 0;
+}
+.html-typography p{
+    padding: 0.5em;
+}
