@@ -12,16 +12,16 @@
         <img class="profile-img" src="https://i.postimg.cc/hGYgg2JY/istockphoto-587805156-612x612.jpg" alt="profile">
         <nav class="menu">
             <ul class="menu-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 <main>
 
     <!-- Unordered List -->
-    <section class="unordered-list">
+    <section id="home" class="unordered-list">
         <h2>Unordered List</h2>
         <ul>
             <li>Item 1</li>
@@ -30,7 +30,6 @@
             <li>Item 4</li>
         </ul>
     </section>
-
     <!-- Ordered List -->
     <section class="ordered-list">
         <h2>Ordered List</h2>
@@ -43,7 +42,7 @@
     </section>
 
     <!-- Table -->
-    <section class="table">
+    <section id="about" class="table">
         <h2>Table</h2>
         <table>
             <thead>
@@ -74,9 +73,12 @@
     </section>
 
     <!-- Image -->
-    <section>
+    <section class="main-img">
         <h2>Image</h2>
-        <img src="https://i.postimg.cc/mgtBqxk9/ds3art.jpg" alt="DS3">
+        <figure>
+        <img class="ds3-img" src="https://i.postimg.cc/mgtBqxk9/ds3art.jpg" alt="DS3">
+        <figcaption>DS3 Art</figcaption>
+    </figure>
     </section>
 
     <section class="html-typography">
@@ -91,7 +93,40 @@
     <p>This is a paragraph with <sub>subscript text</sub>.</p>
     <p>This is a paragraph with <sup>superscript text</sup>.</p>
     </section>
+    <section>
+        <h2 id="contact">Form</h2>
+        <form action="https://formspree.io/f/mjvzogzz" method="post">
+            <div>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div>
+                <input type="text" name="surname" placeholder="Enter your surname">
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div>
+                <span>Male</span><input type="radio" name="gender">
+                <span>Female</span><input type="radio" name="gender">
+            </div>
+            <div>
+                <label>Subjects:</label>
+                <span>HTML 5<input type="checkbox" name="subject" ></span>
+                <span>CSS 3<input type="checkbox" name="subject" ></span>
+                <span>Bootstrap<input type="checkbox" name="subject" ></span>
+                <span>JavaScript<input type="checkbox" name="subject" ></span>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>  
+    </section>
 
+    <!-- box 1 -->
+    <div id="box1">
+        <p id="box1-p">Box1</p>
+    </div>
 </main>
 <footer>
     <p>Copyrigth &copy; 2022</p>

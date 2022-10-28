@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
+    background-color: lightgrey;
 }
 
 header, main, footer{
@@ -18,6 +23,11 @@ header, footer{
     background-color: darkgrey;
 }
 
+/* Pseudo Selector */
+h2::first-letter{
+    background-color: #000;
+    color: whitesmoke;
+}
 
 
  /* Display inline-flex */
@@ -55,13 +65,17 @@ a:visited{
 a:hover, a:focus{
     background-color: #333;
     color: white;
+    border-radius: 0.25rem;
 }
 
 a:active{
     color: turquoise;
 }
 
-
+.ds3-img{
+    width: 25%;
+    border-radius: 0.5rem;
+}
 
 /* table */
 table{
@@ -79,18 +93,51 @@ footer p{
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
 .html-typography{
     border: 1px solid #000;
     margin: 1rem 0;
 }
+
 .html-typography p{
     padding: 0.5em;
 }
+
+button{
+    padding: 0.25rem;
+    border-radius: 1.5rem;
+}
+
+button:active{
+    background-color: #000;
+    color: white;
+}
+
+button:hover{
+    background-color: #000;
+    color: white;
+}
+
+
+/* apply background color of green and move it to the center
+apply a border-radius of 30px */
+/* .box1{
+    background-color: green;
+    margin: auto;
+    border-radius: 30px;
+    width: 300px;
+    text-align: center;
+} */
+
+#box1{
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 20px 10px;
+    border: 10px solid #000;
+}
+
